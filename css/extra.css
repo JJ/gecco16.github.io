@@ -50,3 +50,30 @@ section[data-background] h1 {
         width: 200px;
         z-index: 1;           
 }
+
+
+
+p.authors  {
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: 70%;
+}
+
+
+p.affiliation {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 70%;
+}
+
+.reveal figure figcaption {
+
+  margin-top: 0;
+  font-size: 30%;
+}
+
+.reveal figure img {
+
+  margin-bottom: 0;
+  
+}
