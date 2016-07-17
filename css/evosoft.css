@@ -14,3 +14,15 @@ p.affiliation {
 	margin-bottom: 0px;
 	font-size: 70%;
 }
+
+.reveal figure figcaption {
+
+	margin-top: 0;
+	font-size: 30%;
+}
+
+.reveal figure img {
+
+	margin-bottom: 0;
+	
+}
