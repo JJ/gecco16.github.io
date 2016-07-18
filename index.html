@@ -1,46 +1,30 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Performance for the masses</title>
+    
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+     var link = document.createElement( 'link' );
+     link.rel = 'stylesheet';
+     link.type = 'text/css';
+     link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+     document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
 
-		<title>Performance for the masses</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-	  <div class="reveal"></title>
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/extra.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
+  <body>
 	  <div class="reveal">
 	    <div class="slides">
 
@@ -54,6 +38,29 @@
 	      </section>
 
 	      <section data-external='chunks/nodio.html'></section>
+
+	      <!-- Images -->
+	      <section>
+		<img src='images/time-vs-rank-OS-4-24.png' alt='time vs rank' >
+	      </section>
+
+	      <section>
+		<img src='images/puts-openshift-4-24.png' alt='PUTs vs rank' >
+	      </section>
+
+	      <section>
+		<img src='images/ips-time-ww.png' alt='PUTs vs rank' >
+	      </section>
+
+	       <section>
+		<img src='images/gev-fit-ww.png' alt='PUTs vs rank' ><img src='images/weibull-fit-ww.png' alt='PUTs vs rank' >
+	      </section>
+	      
+	      <section>
+		<img src='images/rastrigin-IPs-hour.png'
+		alt='Rastrigin, unique IP per hour vs rank' >
+	      </section>
+	      
 	    </div>
 	  </div>
 
@@ -64,7 +71,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 			  history: true,
-			  width: "90%",
+//			  width: "90%",
 			  // More info https://github.com/hakimel/reveal.js#dependencies
 			  dependencies: [
 			    { src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
